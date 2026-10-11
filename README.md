@@ -28,7 +28,7 @@ Create a build directory in the `kodi_V22` directory. Note: must be outside the 
 
 #### Kodi configuration for Wayland:
 
-``cmake ../kodi -DCMAKE_INSTALL_PREFIX=/usr/local -DCORE_PLATFORM_NAME=wayland -DAPP_RENDER_SYSTEM=gl -DENABLE_INTERNAL_FFMPEG=ON -DENABLE_INTERNAL_SWIG=ON -DENABLE_INTERNAL_FLATBUFFERS=ON``
+``cmake ../kodi -DCMAKE_INSTALL_PREFIX=/usr/local -DCORE_PLATFORM_NAME=wayland -DAPP_RENDER_SYSTEM=gl -DENABLE_INTERNAL_FFMPEG=ON -DENABLE_INTERNAL_FLATBUFFERS=ON -DENABLE_INTERNAL_SWIG=ON``
 
 Build it:
 
