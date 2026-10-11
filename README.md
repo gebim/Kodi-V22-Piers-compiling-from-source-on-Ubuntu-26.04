@@ -22,11 +22,11 @@ and you'll find the source code in the `kodi` directory.
 
 ### Build Kodi
 
-Create a build directory in `kodi_V22`. Must be outside the kodi source tree i.e. in `kodi_V22`:
+Create a build directory in the `kodi_V22` directory. Note: must be outside the kodi source tree i.e. in the `kodi_V22` directory:
 
  `mkdir kodi-build` and `cd` into it.
 
-Configuration for Wayland:
+#### Kodi configuration for Wayland:
 
 ``cmake ../kodi -DCMAKE_INSTALL_PREFIX=/usr/local -DCORE_PLATFORM_NAME=wayland -DAPP_RENDER_SYSTEM=gl -DENABLE_INTERNAL_FFMPEG=ON -DENABLE_INTERNAL_SWIG=ON -DENABLE_INTERNAL_FLATBUFFERS=ON``
 
