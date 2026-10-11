@@ -34,7 +34,7 @@ Build it:
 
 `cmake --build . -- VERBOSE=1 -j$(getconf _NPROCESSORS_ONLN)`
 
-and if everything goes well, we'll get `kodi-wayland` binary. 
+and if everything goes well, we'll get the `kodi-wayland` binary.
 
 ### Build the binary addons
 
