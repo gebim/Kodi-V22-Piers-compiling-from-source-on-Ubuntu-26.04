@@ -4,7 +4,7 @@ Quick write-up. Many more details can be found in the official documentation.
 
 
 
-### Get the source code code from V22
+### Get the source code of Kodi V22
 
 Create a directory for the source code and the build:
 
