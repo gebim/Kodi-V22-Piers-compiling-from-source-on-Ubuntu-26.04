@@ -4,17 +4,17 @@ Quick write-up. Many more details can be found in the official documentation.
 
 
 
-### Get the source code of Kodi V22
+### Get the source code
 
 Create a directory for the source code and the build:
 
  `m̀kdir kodi_V22` and `cd` into it.
 
-Get the source:
+Get the source code:
 
 `git clone -b Piers https://github.com/xbmc/xbmc kodi`
 
-and you'll find the source code in the `kodi` directory.
+and you'll find the source code tree in the `kodi` directory.
 
 ### Install the dependencies:
 
@@ -22,13 +22,13 @@ and you'll find the source code in the `kodi` directory.
 
 ### Build Kodi
 
-Create a build directory in the `kodi_V22` directory. Note: must be outside the kodi source tree i.e. in the `kodi_V22` directory:
+Create a build directory. Note: this must be outside of the kodi source tree i.e. in the`kodi_V22` directory:
 
  `mkdir kodi-build` and `cd` into it.
 
 #### Kodi configuration for Wayland:
 
-``cmake ../kodi -DCMAKE_INSTALL_PREFIX=/usr/local -DCORE_PLATFORM_NAME=wayland -DAPP_RENDER_SYSTEM=gl -DENABLE_INTERNAL_FFMPEG=ON -DENABLE_INTERNAL_FLATBUFFERS=ON -DENABLE_INTERNAL_SWIG=ON``
+`cmake ../kodi -DCMAKE_INSTALL_PREFIX=/usr/local -DCORE_PLATFORM_NAME=wayland -DAPP_RENDER_SYSTEM=gl -DENABLE_INTERNAL_FFMPEG=ON -DENABLE_INTERNAL_FLATBUFFERS=ON -DENABLE_INTERNAL_SWIG=ON -DENABLE_INTERNAL_TAGLIB=ON`
 
 Build it:
 
@@ -44,7 +44,7 @@ Let's build all binary addons. This will take quite some time, and they will be 
 
 `sudo make -j$(getconf _NPROCESSORS_ONLN) -C tools/depends/target/binary-addons PREFIX=/usr/local`
 
-### Kodi installation
+### Installation
 
 `cd` into `kodi-build` and do a `sudo make install`. 
 
