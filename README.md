@@ -15,6 +15,7 @@ Get the source code:
 `git clone -b Piers https://github.com/xbmc/xbmc kodi`
 
 and you'll find the source code tree in the `kodi` directory.
+The latest update can be got via:`git pull origin Piers`
 
 ### Install the dependencies:
 
