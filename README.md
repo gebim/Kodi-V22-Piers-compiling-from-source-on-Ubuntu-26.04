@@ -1,4 +1,4 @@
-# Kodi V22 "Piers" compiling from source on Ubuntu. Tested on 26-04 and 26.10.
+# Kodi V22 "Piers" compiling from source on Ubuntu. Tested on 26.04 and 26.10.
 
 Quick write-up. Many more details can be found in the official documentation. 
 
